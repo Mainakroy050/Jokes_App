@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Supermercado+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body
+{
+    font-family: 'Press Start 2P', cursive;
+position:relative;
+
+/* Standard syntax */
+animation-name:myfirst;
+animation-duration:20s;
+animation-timing-function:linear;
+animation-delay:5s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+
+}
+
+
+@keyframes myfirst
+{
+0%   {background: #c50808; left:0px; top:0px;}
+25%  {background: #3325f1; left:0px; top:0px;}
+50%  {background: #2d913d; left:0px; top:0px;}
+75%  {background: #8b1bbb; left:0px; top:0px;}
+100% {background: #16676d; left:0px; top:0px;}
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    color: #111010;
+    background-color: rgba(0, 0, 0, 0.0);
+    letter-spacing: .1em;
+    text-shadow: 
+    -1px -1px 1px #6c5bef, 
+      2px 2px 1px #f6ff00;
+  }
+
+
+
+
+
+  .main .wrapper {
+    padding: 19px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    
+  }
+
+  .main .wrapper .joke_heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .joke_content1,
+.joke_content2 {
+  font-size: 1.2rem;
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight: 400;
+  color: #ffff;
+}
+
+.joke_content2 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .neonShadow{
+    height:40px;
+    width:70px;
+    border:none;
+    border-radius:50px;
+    transition:0.3s;
+    background-color:rgba(156, 161, 160,0.3);
+    animation: glow 1s infinite ;
+    transition:0.5s;
+  }
+  span{
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-family: 'Supermercado One', cursive;
+      font-weight: 700;
+      padding-top: 12%;
+      padding-right: 2.5%;
+      margin-right: 0px;
+      font-size: 1.1rem;
+      transition: 0.3s;
+      opacity: 0;
+      cursor: pointer;
+      color: #ffff;
+      }
+  span:hover{
+      transition: 0.3s;
+      opacity: 1;
+      font-weight: 500;
+      }
+  
+  .neonShadow:hover{
+    transform:translateX(-5px)rotate(19deg);
+    border-radius:5px;
+    background-color:#050505;
+    transition:0.5s;
+  }
+  
+  @keyframes glow{
+    0%{
+    box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168);}
+    
+    50%{
+    box-shadow: 5px 5px 20px rgb(12, 155, 140),-5px -5px 20px rgb(81, 224, 210)
+    }
+    100%{
+    box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168)
+    }
+  }
+  
+  
